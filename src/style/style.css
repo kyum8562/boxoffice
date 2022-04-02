@@ -122,7 +122,7 @@
 
 .cont-movie .list-movieInfo li .link-reserve::after{
     display:inline-block;
-    float:right;
+    /* float:right; */
     content:'';
     width:1px;
     height: 100%;
