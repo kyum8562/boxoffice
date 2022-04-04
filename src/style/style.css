@@ -206,3 +206,89 @@
     background: #F2F2F2;
     margin-top : 135px;
 }
+
+.cont-company .cont-coInfo{
+    position:relative;
+    overflow:hidden;
+    width:1189px;
+    margin: 0 auto;
+}
+
+.cont-company .tit-company{
+    display : block;
+    font-size:22px;
+    height:118px;
+    line-height:118px;
+    border-bottom:2px solid #c4c4c4;
+    font-weight:700;
+}
+
+.cont-company .list-coInfo{
+    float:left;
+    margin:38px 0;
+}
+
+.cont-company .list-coInfo dt, .cont-company .list-coInfo dd{
+    display: inline-block;
+    float:left;
+}
+
+.cont-company .list-coInfo dt{
+    font-weight:700;
+    margin-right:5px;
+}
+
+.cont-company .list-coInfo dd{
+    font-weight: 400;
+}
+
+/* 리스트 칸막이 생성 */
+.cont-company .list-coInfo dd:after{
+    display: inline-block;
+    content:'';
+    width:1px;
+    height:12px;
+    margin:0 7px;
+    background:#000;
+}
+
+/* 마지막 칸막이는 제거 */
+.cont-company .list-coInfo dd:last-child::after{
+    display:none;
+}
+
+/* sns 링크 스타일링 */
+.cont-company .list-sns{
+    position: absolute;
+    overflow: hidden;
+    top:50px;
+    right:0;
+}
+
+.cont-company .list-sns li{
+    float: left;
+    margin-left: 22px;
+}
+
+/* 스크린 리더는 읽을 수 있지만 UI에서는 보이지 않게하기 위해 */
+.cont-company .list-sns a[class^="link"]{
+    display : inline-block;
+    width:24px;
+    height: 24px;
+    font-size: 1px;
+    text-indent: -9999px;
+    overflow:hidden;
+} 
+.cont-company .list-sns .link-twitter{
+    background:url("../images/twitter.png");
+}
+.cont-company .list-sns .link-instagram{
+    background:url("../images/instagram.png");
+}
+.cont-company .list-sns .link-facebook{
+    background:url("../images/facebook.png");
+}
+.cont-company .txt-copy{
+    float:right;
+    margin-top: 38px;
+}
