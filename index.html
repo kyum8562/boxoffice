@@ -9,13 +9,17 @@
     <link rel="stylesheet" href="src\style\style.css">
 </head>
 <body>
+    <div class="nav-skip">
+        <a href="#cont-nav">영화목록 바로가기</a>
+        <a href="#cont-company">회사정보 바로가기</a>
+    </div>
     <h1 class="sr-only">Girin Cinema</h1>
     <section class="cont-movie">
         <h2 class ="tit-cont">기린 시네마 영화 목록</h2>
         <header>
             <!-- 사이트 설명이나 탐색에 도움이 되는 컨테이너 -->
             <h3 class="sr-only">영화 정보 목록</h3>
-            <nav class="nav-movie">
+            <nav id="cont-nav" class="nav-movie">
                 <ul class ="list-movieNav">
                     <li class="on"><a href="#none" class="link-nav">현재상영영화</a></li>
                     <li><a href="#none" class="link-nav">개봉예정영화</a></li>
@@ -56,10 +60,127 @@
                     <a href="#none" class="link-reserve">예매하기</a><a href="#none" class="link-teaser">예고편</a>
                     
                 </li>
+                <li>
+                    <article>
+                        <h4 class="sr-only">영화 상세 정보</h4>
+                        <a href="#none" class="link-movie">
+                            <img src="src/images/img1.png" alt="img1" class="img1">
+                        </a>
+                        <strong class="sl-ellipsis">1번영화입니다</strong>
+                        <dl class="list-info">
+                            <div>
+                                <dt>개요</dt>
+                                <dd>판타지</dd>
+                            </div>
+                            <div class="item-star">
+                                <dt>평점</dt>
+                                <dd>8.82</dd>
+                            </div>
+                            <div>
+                                <dt>개봉</dt>
+                                <dd>2021.10.20</dd>
+                            </div>
+                            <div>
+                                <dt>출연</dt>
+                                <dd class="multi-ellipsis">티모시 샬라메, 레베카 퍼거슨, 레이선 오클랜드</dd>
+                            </div>
+                        </dl>
+                    </article>
+
+                    <a href="#none" class="link-reserve">예매하기</a><a href="#none" class="link-teaser">예고편</a>
+                    
+                </li><li>
+                    <article>
+                        <h4 class="sr-only">영화 상세 정보</h4>
+                        <a href="#none" class="link-movie">
+                            <img src="src/images/img1.png" alt="img1" class="img1">
+                        </a>
+                        <strong class="sl-ellipsis">1번영화입니다</strong>
+                        <dl class="list-info">
+                            <div>
+                                <dt>개요</dt>
+                                <dd>판타지</dd>
+                            </div>
+                            <div class="item-star">
+                                <dt>평점</dt>
+                                <dd>8.82</dd>
+                            </div>
+                            <div>
+                                <dt>개봉</dt>
+                                <dd>2021.10.20</dd>
+                            </div>
+                            <div>
+                                <dt>출연</dt>
+                                <dd class="multi-ellipsis">티모시 샬라메, 레베카 퍼거슨, 레이선 오클랜드</dd>
+                            </div>
+                        </dl>
+                    </article>
+
+                    <a href="#none" class="link-reserve">예매하기</a><a href="#none" class="link-teaser">예고편</a>
+                    
+                </li><li>
+                    <article>
+                        <h4 class="sr-only">영화 상세 정보</h4>
+                        <a href="#none" class="link-movie">
+                            <img src="src/images/img1.png" alt="img1" class="img1">
+                        </a>
+                        <strong class="sl-ellipsis">1번영화입니다</strong>
+                        <dl class="list-info">
+                            <div>
+                                <dt>개요</dt>
+                                <dd>판타지</dd>
+                            </div>
+                            <div class="item-star">
+                                <dt>평점</dt>
+                                <dd>8.82</dd>
+                            </div>
+                            <div>
+                                <dt>개봉</dt>
+                                <dd>2021.10.20</dd>
+                            </div>
+                            <div>
+                                <dt>출연</dt>
+                                <dd class="multi-ellipsis">티모시 샬라메, 레베카 퍼거슨, 레이선 오클랜드</dd>
+                            </div>
+                        </dl>
+                    </article>
+
+                    <a href="#none" class="link-reserve">예매하기</a><a href="#none" class="link-teaser">예고편</a>
+                    
+                </li><li>
+                    <article>
+                        <h4 class="sr-only">영화 상세 정보</h4>
+                        <a href="#none" class="link-movie">
+                            <img src="src/images/img1.png" alt="img1" class="img1">
+                        </a>
+                        <strong class="sl-ellipsis">1번영화입니다</strong>
+                        <dl class="list-info">
+                            <div>
+                                <dt>개요</dt>
+                                <dd>판타지</dd>
+                            </div>
+                            <div class="item-star">
+                                <dt>평점</dt>
+                                <dd>8.82</dd>
+                            </div>
+                            <div>
+                                <dt>개봉</dt>
+                                <dd>2021.10.20</dd>
+                            </div>
+                            <div>
+                                <dt>출연</dt>
+                                <dd class="multi-ellipsis">티모시 샬라메, 레베카 퍼거슨, 레이선 오클랜드</dd>
+                            </div>
+                        </dl>
+                    </article>
+
+                    <a href="#none" class="link-reserve">예매하기</a><a href="#none" class="link-teaser">예고편</a>
+                    
+                </li>
             </ul>
         </section>
     </section>
-    <footer class="cont-company">
+    <footer id="cont-company" class="cont-company">
         <section class="cont-coInfo">
             <h2 class="sr-only">기업정보</h2>
             <strong class="tit-company">Girin Cinema</strong>
@@ -79,11 +200,11 @@
             </dl>
             <em class="sr-only">sns 링크 목록</em>
             <ul class="list-sns">
-                <li><a href="#none" class="link-twitter">트위터</a></li>
-                <li><a href="#none" class="link-instagram">인스타그램</a></li>
-                <li><a href="#none" class="link-facebook">페이스북</a></li>
+                <li><a href="http://www.twitter.com" class="link-twitter">트위터</a></li>
+                <li><a href="http://www.instagram.com" class="link-instagram">인스타그램</a></li>
+                <li><a href="http://www.facebook.com" class="link-facebook">페이스북</a></li>
             </ul>
-            <small class="txt-copy">Copyright &copy;THe Girin, All rights Reserved</small>
+            <small class="txt-copy">Copyright &copy;The Girin, All rights Reserved</small>
         </section>
     </footer>
 </body>
