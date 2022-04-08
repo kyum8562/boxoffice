@@ -1,0 +1,139 @@
+#app{
+    /* pc화면이지만 모바일에서도 동일하게 UI가 깨지지 않게 보여주기 위해 */
+    overflow:scroll;
+    /* 폰트설정 */
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+img{
+    width:100%;
+}
+
+.movie-container{
+    display:flex;
+    align-items:center;
+    height:100vh;
+    width:672px;
+    margin:0 auto;
+}
+
+.movie{
+    display:flex;
+    align-items:center;
+    position:relative;
+    margin-left:64px;
+}
+
+.poster-container{
+    position:absolute;
+    left:-64px;
+    width:281px;
+    height:396px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.content{
+    background: #333;
+    width: 608px;
+    height:500px;
+    border-radius: 15px;
+    color: white;
+    padding:64px 0 0 256px;
+    box-sizing: border-box;;   
+}
+
+.content-type span{
+    color:#bdbdbd;
+}
+
+.content-type span + span::before{
+    content:'';
+    display:inline-block;
+    width:1px;
+    height:13px;
+    background-color: #bdbdbd;
+    margin: 0px 7px -1px 3px;
+}
+
+.content-title{
+    margin:13px 0 114px 0;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+.content-favorite{
+    display: flex;
+    margin-bottom:22px;
+}
+
+.content-favorite button{
+    display: flex;
+    /* 메인축의 중심 */
+    justify-content: center;
+    /* 교차축의 중심 */
+    align-items: center;
+    border: 2px solid #FFFFFF;
+    border-radius:100%;
+    margin-right:20px;
+    width:60px;
+    height:60px;
+}
+
+.button-recommend .icon-thumbs-up{
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 29px;
+    height: 29px;
+    background: center / contain url(/src/images/icon_thumbs_up.png) no-repeat;
+}
+
+.button-recommend.on .icon-thumbs-up{
+    background-image: url(/src/images/icon_thumbs_up_fill.png);
+}
+
+.button-recommend.on{
+    background-color: #2F80ED;
+}
+
+.button-heart .icon-heart{
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 29px;
+    height: 29px;
+    background: center / contain url(/src/images/icon_heart.png) no-repeat;
+}
+
+.button-heart.on .icon-heart{
+    background-image: url(/src/images/icon_heart_fill.png);
+}
+
+.button-heart.on{
+    background-color: #EB5757;
+}
+
+.star-average{
+    /* em은 인라인 요소이기 때문에 마진바텀만쓰면 적용이 되지 않는다 + display:block */
+    display:block;
+    margin-bottom:16px;
+}
+
+.start-point-container{
+    display:flex;
+    align-items:center;
+}
+
+.star-background{
+    display: flex;
+}
+
+.star-background img{
+    width:51px;
+}
+
+.icon-remove-star{
+    width:22px;
+    height:22px;
+    margin-left :11px;
+}
